@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/myApp.dir/app/src/main.cpp.o  -o myApp  libfile_io_lib.a 
