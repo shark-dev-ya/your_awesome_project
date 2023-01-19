@@ -5,7 +5,7 @@
 
 class File_IO {
     public:
-        
+        std::string createFileString();
 };
 
 #endif //FILE_IO_H
