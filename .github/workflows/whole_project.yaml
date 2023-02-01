@@ -1,0 +1,24 @@
+name: "build and ruin whole project"
+
+on:
+  push:
+    branches:
+      - master
+      - develop
+      - feature
+      - refactor
+      - main 
+      - Master
+  pull_request:
+    branches:
+      - master
+      - develop
+
+jobs:
+  build_and_ruin:
+    runs-on: ubuntu-latest
+    name: Build and ruin the whole project
+    steps:
+      - name: checkout the code
+        uses: actions/checkout@v3  
+    

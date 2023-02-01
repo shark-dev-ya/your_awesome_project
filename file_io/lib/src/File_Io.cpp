@@ -1,4 +1,5 @@
 #include "File_Io.h"
+#include <vector>
 #include <stdexcept>
 
 File_IO::File_IO(std::string filename) {
@@ -20,7 +21,7 @@ std::vector<std::string> File_IO::readLines()
 {
     std::vector<std::string> content;
 
-    if ( /*some check which is failing*/) {
+    if ( /*some check which is failing*/ false) {
         return content;
     }
     /* open file using m_filename variable*/
@@ -41,14 +42,8 @@ void File_IO::writeLine( std::string data_line)
     //close file
 }
 
-void File_IO::writeLines( std::list<std::string> data)
+void File_IO::writeLines( std::vector<std::string> data)
 {
-    /* 3 input values:
-    1) m_filename                V
-    2) the amount of lines   data.size()
-    3) the lines themselves  std::list<std::string> data
-    */
-    (void)lines;
 
 
     /* open file using m_filename variable*/

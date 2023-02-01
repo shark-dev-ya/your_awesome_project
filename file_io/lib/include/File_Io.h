@@ -5,14 +5,14 @@
 #include <vector>
 
 /* 1st option: static methods */
-class File_IO {
-    public:
-        static std::string readLine(std::string filename);
-        static std::vector<std::string> readLines(std::string filename);
-        static void writeLine( std::string filename , std::string data_line);
-        static void writeLines(std::string filename , std::vector<std::string> data);
-
-};
+// class File_IO {
+//     public:
+//         static std::string readLine(std::string filename);
+//         static std::vector<std::string> readLines(std::string filename);
+//         static void writeLine( std::string filename , std::string data_line);
+//         static void writeLines(std::string filename , std::vector<std::string> data);
+// 
+// };
 
 
 
