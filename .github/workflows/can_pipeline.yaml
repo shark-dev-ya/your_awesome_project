@@ -1,0 +1,38 @@
+name: "build and ruin whole project"
+
+on:
+  push:
+    branches:
+      - master
+      - develop
+      - feature
+      - refactor
+      - main 
+      - Master
+  pull_request:
+    branches:
+      - master
+      - develop
+
+jobs:
+  build_and_ruin:
+    runs-on: ubuntu-latest
+    name: Build and ruin the whole project
+    steps:
+      - name: checkout the code
+        uses: actions/checkout@v3
+      - name : install prerequisites    
+        run: sudo apt-get install -y python3 python3-pip cmake build-essential tree
+      - name: visually control the code
+        run: tree .
+      - name: build the code
+        run: |
+          mkdir build
+          cd build
+          cmake .. 
+          make generate_sources_from_json
+      - name: notify user
+        run: echo "Success!"     
+    
+
+
