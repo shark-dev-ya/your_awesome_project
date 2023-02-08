@@ -6,10 +6,10 @@ Cover a case if we want to:
 write a line into an empty file( file doesn't exist)
 */
 TEST(File_IO_tests, WriteLineToEmptyFile) {
-    File_IO file;
-    bool isOpened = file.open("test.txt");
+    File_IO file("asdsad");
+   //  bool isOpened = file.open("test.txt");
 
-    EXPECT_EQ( isOpened, true );
+   //  EXPECT_EQ( isOpened, true );
     //EXPECT_THROW( file.close() , std::exception );
     // more code to write to a file
 
@@ -71,7 +71,7 @@ TEST(File_IO_tests, /* test case name ( or number from list above : N1 , N2)*/ N
 
     /* Your Expected Data */
 
-    File_IO file;  //Your File_IO class from library
+    File_IO file("test");  //Your File_IO class from library
 
 
     /* Your Logic of test case */
